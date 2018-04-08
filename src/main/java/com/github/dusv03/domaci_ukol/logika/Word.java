@@ -5,7 +5,7 @@ public class Word {
 	private String wordEN;
 	private String URL;
 	
-	public Word(String CZ, String EN, String URL) {
+	public Word(String EN, String CZ, String URL) {
 		this.wordCZ = CZ;
 		this.wordEN = EN;
 		this.URL = URL;
