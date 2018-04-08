@@ -72,4 +72,9 @@ public class Game {
     		spatne = spatne + 1;
     	}
     }
+    
+    public void vynulovat() {
+    	dobre = 0;
+    	spatne = 0;
+    }
 }

@@ -81,7 +81,7 @@
                   <Tooltip fx:id="tooltip4" text="Empty Tooltip" />
                </tooltip>
             </Button>
-            <Button fx:id="button5" mnemonicParsing="false" onDragDetected="#guess" prefHeight="120.0" prefWidth="150.0">
+            <Button fx:id="button5" mnemonicParsing="false" onAction="#guess" prefHeight="120.0" prefWidth="150.0">
                <VBox.margin>
                   <Insets bottom="15.0" left="50.0" />
                </VBox.margin>
@@ -107,19 +107,10 @@
       </VBox>
       <MenuBar prefHeight="19.0" prefWidth="274.0" GridPane.columnSpan="2" GridPane.rowIndex="1">
         <menus>
-          <Menu mnemonicParsing="false" text="File">
+          <Menu mnemonicParsing="false" text="Hra">
             <items>
-              <MenuItem mnemonicParsing="false" text="Close" />
-            </items>
-          </Menu>
-          <Menu mnemonicParsing="false" text="Edit">
-            <items>
-              <MenuItem mnemonicParsing="false" text="Delete" />
-            </items>
-          </Menu>
-          <Menu mnemonicParsing="false" text="Help">
-            <items>
-              <MenuItem mnemonicParsing="false" text="About" />
+              <MenuItem mnemonicParsing="false" onAction="#novahra" text="Nová hra" />
+                  <MenuItem mnemonicParsing="false" onAction="#konechry" text="Konec hry" />
             </items>
           </Menu>
         </menus>

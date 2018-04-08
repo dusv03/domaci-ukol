@@ -7,6 +7,7 @@ import java.util.Map;
 import com.github.dusv03.domaci_ukol.logika.Game;
 import com.github.dusv03.domaci_ukol.logika.Word;
 
+import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.Node;
@@ -134,4 +135,14 @@ public void inicializuj(Game game) {
 		}
 	}
 	
+	public void novahra() {
+		hadani = false;
+		button0.setText("Hádej");
+		game.vynulovat();
+		textvystup.clear();
+	}
+	
+	public void konechry() {
+		Platform.exit();	
+	}
 }
