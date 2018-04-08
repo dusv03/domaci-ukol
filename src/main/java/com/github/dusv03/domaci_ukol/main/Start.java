@@ -24,11 +24,11 @@ public class Start extends Application{
 
     	HomeController controller = loader.getController(); 	
     	Game hra = new Game();
-    	controller.inicializuj(hra, this);
+    	controller.inicializuj(hra);
 
     	primaryStage.setScene(new Scene(root));
     	primaryStage.show();
-    	primaryStage.setTitle("Hra se zvĂ­Ĺ™Ăˇtky");
+    	primaryStage.setTitle("Aplikace pro výuku angličtiny");
 		
 	}
 }

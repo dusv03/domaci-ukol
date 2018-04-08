@@ -6,7 +6,6 @@ import java.util.List;
 import java.util.Map;
 import com.github.dusv03.domaci_ukol.logika.Game;
 import com.github.dusv03.domaci_ukol.logika.Word;
-import com.github.dusv03.domaci_ukol.main.Start;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -55,7 +54,7 @@ public class HomeController extends GridPane {
 		textvystup.appendText(odpoved);
 	}
 	
-public void inicializuj(Game game, Start start) {
+public void inicializuj(Game game) {
 	this.game = game;
 	tlacitka = new HashMap<String, Word>();
 	Words = game.getSlovicka();
@@ -67,31 +66,31 @@ public void inicializuj(Game game, Start start) {
 	tooltip1.setText(tlacitka.get("button1").getCZ());
 	
 	
-	tlacitka.put(button1.getId(), Words.get(1));
+	tlacitka.put(button2.getId(), Words.get(1));
 	URL = Words.get(1).getURL();
 	obr = new Image (getClass().getResourceAsStream(URL));
 	picture2.setImage(obr);
 	tooltip2.setText(tlacitka.get("button2").getCZ());
 	
-	tlacitka.put(button1.getId(), Words.get(2));
+	tlacitka.put(button3.getId(), Words.get(2));
 	URL = Words.get(2).getURL();
 	obr = new Image (getClass().getResourceAsStream(URL));
 	picture3.setImage(obr);
 	tooltip3.setText(tlacitka.get("button3").getCZ());
 	
-	tlacitka.put(button1.getId(), Words.get(3));
+	tlacitka.put(button4.getId(), Words.get(3));
 	URL = Words.get(3).getURL();
 	obr = new Image (getClass().getResourceAsStream(URL));
 	picture4.setImage(obr);
 	tooltip4.setText(tlacitka.get("button4").getCZ());
 	
-	tlacitka.put(button1.getId(), Words.get(4));
+	tlacitka.put(button5.getId(), Words.get(4));
 	URL = Words.get(4).getURL();
 	obr = new Image (getClass().getResourceAsStream(URL));
 	picture5.setImage(obr);
 	tooltip5.setText(tlacitka.get("button5").getCZ());
 	
-	tlacitka.put(button1.getId(), Words.get(5));
+	tlacitka.put(button6.getId(), Words.get(5));
 	URL = Words.get(5).getURL();
 	obr = new Image (getClass().getResourceAsStream(URL));
 	picture6.setImage(obr);
